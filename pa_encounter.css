@@ -1,0 +1,40 @@
+html {
+  background-color: lightcyan;
+}
+#sidebar {
+  left: 0;
+  position: fixed;
+  width: 200px;
+  border-right: 11px solid #34ae57;
+}
+.sidebutton {
+  background-color: white;
+  text-align: center;
+}
+.heading {
+  text-align: center;
+  font-family: Impact;
+  font-size: 20px;
+}
+header#subsection {
+  font-size: 22px;
+  font-weight: bold;
+}
+h1.title {
+  font-family: "Comforter", cursive;
+  font-size: 55px;
+  margin-left: 220px;
+}
+#myTextarea {
+  width: min(1125px, 90%);
+  height: 200px;
+  border-width: 2px;
+  border-color: black;
+  margin-left: 10px;
+}
+#form {
+  margin-left: 220px;
+}
+
+/* img {
+} */

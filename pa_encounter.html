@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Standardized Patient Encounter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="pa_encounter.js"></script>
+    <link rel="stylesheet" href="pa_encounter.css">
+
+</head>
+<body>
+<title> Standardized Patient Encounter </title>
+
+<!-- sidebar with buttons to show content under emphasized text -->
+<div id="sidebar">
+<header class="heading" style>Parse Info</header>
+<ul>
+    
+    <li> <button class="sidebutton" onclick ="displayOpeningScenario()">Opening Scenario</li></button><br>
+    <li> <button class="sidebutton" onclick ="displayVitalSigns()">Vital signs</li></button><br>
+    <li> <button class="sidebutton" onclick = >Focused History </li></button><br>
+    <li> <button class="sidebutton" style="text-align:left">Focused Physical Examination</li></button><br>
+    <li> <button class="sidebutton">family history</li></button><br>
+    <li> <button class="sidebutton">family history</li></button><br>
+    <li> <button class="sidebutton">family history</li></button><br>
+    <li> <button class="sidebutton">family history</li></button><br>
+    <li> <button class="sidebutton">family history</li></button><br>
+    <li> <button class="sidebutton" onclick ="displaySexualHistory()">Sexual History</li></button><br>
+
+    <hr><header id="subsection">2nd section</header><br>
+
+     <li> <button class="sidebutton">Focused physical examination</li></button><br>
+     <li> <button class="sidebutton" style="visiblity: hidden">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     
+     <hr><header id="subsection">3rd section</header><br>
+
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+     <li> <button class="sidebutton">family history</li></button><br>
+
+     
+</ul>
+
+</div>
+
+
+<div>
+    <h1 class="title">Standardized Patient Encounter</h1>
+
+</div>
+
+
+
+<div id="form"> 
+    <form>
+        
+    <textarea id="myTextarea" placeholder="insert text..."></textarea>
+<!-- This one has always been a gotcha for me and many others. In short, the opening and closing tags for the <textarea> element must be on the same line, otherwise a newline character occupies it. The placeholder will therefore not be displayed since the input area contains content (a newline character is, technically, valid content).     -->
+    <br>
+    
+    <div id="textAreaButtons">
+    <button style="margin-left: 10px;"type="button" id="nextButton" onclick="next()"
+    >next</button>
+    <button style="margin-left: 20px;"type="button" id="previousButton" onclick="previous()"
+    >previous</button>
+    </div>
+
+    
+       
+     
+        
+    </form>
+    
+    
+    
+
+</div>
+
+    <div id= "imgdiv1">
+    <img src="images/patientbg.png" style="margin-top:10px ; margin-left: 220px"> 
+            <img  src="images/catdr.jpg" alt="catdr"; id="catDr"; style="width:500px;height:550px;  ">
+
+    </div>
+
+    
+        
+
+
+
+</body>
+</html>
